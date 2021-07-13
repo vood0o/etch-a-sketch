@@ -1,30 +1,3 @@
-/**
- * OK- creez un grid principal;
- * OK- la incarcarea paginii se apeleaza o functie care genereaza 16x16 (256) div-uri in interiorul grid-ului
- * creez un form cu banda care schimba marimea grid-ului principal (minim 1x1, maxim 100x100)
- *      - OK- la selectia unui "numar" pe banda se va apela o functie care:
- *          -- OK- se cere permisiunea sa se stearga (confirm)
- *              --- OK- afiseaza vizual numarul de div-uri
- *              --- OK- se sterg toate div-urile existente in grid
- *              --- OK- se genereaza un numar de div-uri egal cu numar * numar
- *              --- OK- se schimba .style "grid-template-columns: repeat(***numar***, 1fr)"
- *              --- OK- se schimba .style "grid-template-rows: repeat(***numar***, 1fr)"
- *              --- OK- se adauga div-urile generate in grid-ul principal
- * 
- * creez o functie care se apeleaza la "onmouseenter" deasupra unui div din interiorul grid-ului:
- *      - DACA NU ARE clasa blackDiv
- *          -- se adauga clasa blackDiv cu background-color: rgba(0,0,0,0);
- *      - DACA NU ARE background-color: rgba(0,0,0,1)
- *          -- se adauga 0.1 la alpha din background-color: rgba(0,0,0, +0.1);
- * 
- * OK- creez un form care are un buton "Reset"
- *      - la apasarea butonului se va apela o functie care:
- *          -- sterge toate stilurile din toate div-urile din interiorul grid-ului
- *          -- sterge toate clasele din toate div-urile din interiorul grid-ului
- *          -- adauga clasa defaultDiv cu background-color: rgba(255,255,255,1);
- * 
- */
-
 //coloring divs with blackening
 const bwButton = document.querySelector('#bwButton');
 bwButton.addEventListener('click', function () {
