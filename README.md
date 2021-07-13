@@ -1,1 +1,5 @@
-This project is part the The Odin Project's curriculum
+This is my Etch-a-Sketch project.
+
+Skills required: HTML, CSS, Javascript.
+
+V
